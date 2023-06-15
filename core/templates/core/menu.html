@@ -1,0 +1,4 @@
+{% for category in categories %}
+    <a class="nav-link" href="{% url 'category_detail' category.slug %}">{{ category.title }}</a> 
+{% endfor %}
+<a href="{% url 'about' %}" class="text-white">About</a>
